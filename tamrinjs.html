@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>تمرین تغییر فونت و رنگ توسط جاوا اسکریپت</title>
+
+<style>
+body{
+text-align:center;
+}
+</style>
+
+</head>
+<body>
+<h2 id="ali">سلام به وبسایت من خوش امدید</h2>
+<button onclick="inc()">افزایش سایز</button>
+<button onclick="dec()">کاهش سایز</button>
+
+<button onclick="changeColor('green','40px')">سبز</button>
+<button onclick="changeColor('red','55px')">قرمز</button>
+<button onclick="changeColor('blue','60px')">ابی</button>
+<button onclick="changeColor('purple','85px')">بنفش</button>
+
+<button onclick="hide()">HIDE</button>
+<button onclick="show()">SHOW</button>
+
+
+
+<script>
+function inc(){
+document.getElementById("ali").style.fontSize="70px";
+}
+function dec(){
+document.getElementById("ali").style.fontSize="20px";
+}
+
+function  changeColor(color,fs){
+document.getElementById("ali").style.color=color;
+document.getElementById("ali").style.fontSize=fs;
+}
+
+function hide(){
+document.getElementById("ali").style.display="none";
+}
+function show(){
+document.getElementById("ali").style.display="block";
+}
+
+</script>
+</body>
+
+</html>
